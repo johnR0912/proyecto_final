@@ -1,3 +1,4 @@
+
 package Controller;
 
 import java.io.IOException;
@@ -13,7 +14,6 @@ public class EditarUsuario extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
     }
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -33,5 +33,4 @@ public class EditarUsuario extends HttpServlet {
             throws ServletException, IOException {
         processRequest(request, response);
     }
-
 }

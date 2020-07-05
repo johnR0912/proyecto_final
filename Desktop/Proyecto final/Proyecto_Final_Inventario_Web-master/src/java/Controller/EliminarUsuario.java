@@ -1,6 +1,5 @@
 package Controller;
 
-
 import DAO.UsuarioDAO;
 import DAO.UsuarioDAOImplementar;
 import java.io.IOException;
@@ -47,8 +46,7 @@ public class EliminarUsuario extends HttpServlet {
     }
 
     @Override
-    public String getServletInfo() {
+    public String getServletInfo(){
         return "Short description";
     }// </editor-fold>
-
 }

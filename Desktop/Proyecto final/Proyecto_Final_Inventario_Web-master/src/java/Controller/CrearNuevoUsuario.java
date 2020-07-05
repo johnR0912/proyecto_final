@@ -1,7 +1,5 @@
 package Controller;
 
-
-
 import DAO.UsuarioDAO;
 import DAO.UsuarioDAOImplementar;
 import Model.Usuario;
@@ -73,14 +71,12 @@ public class CrearNuevoUsuario extends HttpServlet {
     }
 
     
-    
     protected void listaUsuario(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException{
         response.setContentType("text/html;charset=UFT=8");
         
         try
         {
-
         UsuarioDAO usuario = new UsuarioDAOImplementar();
         
         HttpSession sesion = request.getSession(true);
