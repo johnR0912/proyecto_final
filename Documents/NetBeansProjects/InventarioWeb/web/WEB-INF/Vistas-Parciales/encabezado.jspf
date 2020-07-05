@@ -1,0 +1,30 @@
+<%-- any content can be specified here e.g.: --%>
+<%@page import="Model.Usuario"%>
+<%@ page pageEncoding="UTF-8" %>
+<%
+        HttpSession miSesion = request.getSession(true);   
+        Usuario q = (Usuario)miSesion.getAttribute("usuario");
+        if(q.getUsuario()!=null)
+        {
+            System.out.print("si hay");
+        }
+        else
+        {
+            System.out.print("no hay"); 
+        }
+            
+     %>
+<div>
+    <div class="encabezado">
+        Sistema de Control Inventario
+        <a href="index" class="btn btn-primary btn-sm" role="button">Inicio</a>
+        <a href="categorias?opcion=listar" class="btn btn-primary btn-sm" role="button">Categorias</a>
+        <a href="crearNuevoUsuario?opcion=listar" class="btn btn-primary btn-sm" role="button">Usuario</a>
+        <a href="crearProducto?opcion=listar"   class="btn btn-primary btn-sm" role="button">Producto</a>
+        <a href="acercade.jsp" class="btn btn-primary btn-sm" role="button">Acerca de</a>
+        <a href="cerrarsesion" class="btn btn-danger btn-sm" role="button">Cerrar session</a>
+        <li class="btn btn-success btn-sm"><%=q.getUsuario()%></li>
+       
+    </div>
+    <div class="contenido"> 
+        
