@@ -1,0 +1,1 @@
+Agrege la libreria MySQL JDBC Driver esta se agrega desde netbeans 
